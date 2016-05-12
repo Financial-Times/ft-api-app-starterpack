@@ -1,0 +1,14 @@
+<template>
+    <require from='./modules/origami/origami-header.html'></require>
+    <origami-header></origami-header>
+
+    <require from='./modules/navbar/nav-bar.html'></require>
+    <nav-bar router.bind="router"></nav-bar>
+
+    <div class="o-grid-container">
+        <router-view></router-view>
+    </div>
+
+    <require from='./modules/origami/origami-footer.html'></require>
+    <origami-footer></origami-footer>
+</template>

@@ -1,0 +1,25 @@
+<!doctype html>
+<html class="core">
+
+    <head>
+        <title>UPP Search test</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="shortcut icon" href="assets/img/favicon.ico" />
+
+        <!-- build:css assets/css/style.css?v=@version@ -->
+        <link rel="stylesheet" href="app/dev/client/assets/css/style.css?v=@version@" />
+        <!-- /build -->
+        <script src="//polyfill.webservices.ft.com/v1/polyfill.min.js"></script>
+        <script src="jspm_packages/system.js"></script>
+        <script src="config.js"></script>
+    </head>
+
+    <body aurelia-app="configuration">
+        <div class="spinner"></div>
+        <script>
+            System.baseUrl = '/assets/js/';
+            System.import('aurelia-bootstrapper');
+        </script>
+    </body>
+
+</html>

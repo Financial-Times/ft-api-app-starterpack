@@ -1,0 +1,9 @@
+<template bindable="router">
+    <nav class="navbar" role="navigation">
+        <ul class="navigation">
+            <li repeat.for="row of router.navigation" class="${row.isActive ? 'active' : ''}">
+                <a href.bind="row.href" class="o-buttons o-buttons--big o-buttons--standout" aria-selected="${row.isActive}">${row.title}</a>
+            </li>
+        </ul>
+    </nav>
+</template>
